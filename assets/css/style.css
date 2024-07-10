@@ -117,13 +117,17 @@ main {
 #web-development-container {
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.02);
-    height: 1370px;
+    height: 1395px;
 }
 
 .web-development-content {
     width: 946px;
     height: 1235px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .web-development-header h1 {
@@ -153,18 +157,23 @@ main {
     /* margin-bottom: 100px; */
     border-radius: 16px;
     background: linear-gradient(90.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+    transition: 0.8s;
 }
 
-.column-01 {
+.web-dev-column:hover{
+transform: scale(1.1);
+}
+
+.column {
     display: flex;
     gap: 99.77px;
 }
 
-.column-01-text {
+.column-text {
     width: 477px;
 }
 
-.column-01-text h2 {
+.column-text h2 {
     color: rgba(13, 19, 33, 0.7);
     font-size: 24px;
     font-weight: 700;
@@ -173,7 +182,7 @@ main {
     margin-bottom: 16px;
 }
 
-.column-01-text p {
+.column-text p {
     color: rgb(13, 19, 33);
     font-size: 16px;
     font-weight: 400;
@@ -182,7 +191,7 @@ main {
     margin-bottom: 32px;
 }
 
-.column-01-text a button {
+.column-text a button {
     padding: 12px 20px 12px 20px;
     color: rgb(13, 19, 33);
     font-size: 20px;
@@ -199,6 +208,7 @@ main {
     gap: 48.8px;
 }
 
+
 /* Why Web Development section ends hear */
 
 /* My Inspiration section start hear */
@@ -211,7 +221,7 @@ main {
 .my-inspiration-header {
     width: 852px;
     margin: 0 auto;
-    margin-bottom: 151px;
+    margin-bottom: 48px;
 }
 
 .my-inspiration-header h1 {
@@ -265,6 +275,10 @@ main {
     width: 364px;
     padding: 40px;
     border-radius: 16px;
+    transition: 0.8s;
+}
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card h2 {
@@ -309,4 +323,83 @@ main {
 }
 
 /* My Current Target section ends hear */
+
+/* support section start hear */
+.support {
+    height: 314px;
+    background: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2);
+    background-image: url(../photos/handshake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 79px;
+    background-position: center;
+    padding: 64px 48px 64px 48px;
+    border-radius: 16px;
+}
+
+.support-content {
+    width: 730px;
+    margin: 0 auto;
+}
+
+.support-content h2 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.support-content p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 24px;
+}
+
+.support-content input {
+    width: 548px;
+    height: 57px;
+    padding: 19px 20px 19px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.support-content input::placeholder {
+    color: rgba(13, 19, 33, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.support-content input:focus {
+    outline: 0;
+}
+
+.support-content button {
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 120px;
+    height: 58px;
+    color: rgb(13, 19, 33);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    border: 0;
+}
+.support-content button:hover {
+    background-color: green;
+}
+
+/* support section ends hear */
 /* main section ends hear */
