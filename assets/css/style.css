@@ -44,6 +44,7 @@ nav button {
     border-radius: 8px;
     opacity: 0.8;
     padding: 17px 24px 17px 24px;
+    cursor: pointer;
 }
 
 .header {
@@ -102,6 +103,7 @@ nav button {
     display: block;
     margin: 0 auto;
     margin-top: 32px;
+    cursor: pointer;
 }
 
 /* header section ends hear */
@@ -160,8 +162,8 @@ main {
     transition: 0.8s;
 }
 
-.web-dev-column:hover{
-transform: scale(1.1);
+.web-dev-column:hover {
+    transform: scale(1.1);
 }
 
 .column {
@@ -277,6 +279,7 @@ transform: scale(1.1);
     border-radius: 16px;
     transition: 0.8s;
 }
+
 .card:hover {
     transform: scale(1.1);
 }
@@ -397,9 +400,26 @@ transform: scale(1.1);
     text-align: center;
     border: 0;
 }
+
 .support-content button:hover {
     background-color: green;
+    color: #fff;
 }
 
 /* support section ends hear */
 /* main section ends hear */
+
+/* footer section start hear */
+#footer {
+    max-width: 1440px;
+    height: 100px;
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.03);
+    padding: 32px 150px 32px 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* footer section ends hear */
